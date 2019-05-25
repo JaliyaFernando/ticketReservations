@@ -1,0 +1,169 @@
+
+body {
+  background-color: #0099FF;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: lightblue;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+/*
+.content {
+  background-image: url("images/thumb-1920-565118.jpg");
+  background-size: 50% 100%;
+
+  height: 600px;
+  background-repeat: no-repeat;
+}
+*/
+
+.content2 {
+  background-color: #0099FF;
+  padding: 10px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.content3{
+  float: right;
+  position:relative;
+  top:-10px
+}
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+.active {
+  background-color: royalblue;
+}
+
+img {
+  border-radius: 10%;
+  width:3%;
+  padding-top: 0px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.logo{width: 35%;}
+.logo img{width: 30%;}
+
+
+.footer {
+  bottom: 0;
+  background-color: lightblue;
+  color: white;
+  margin-top: 15px;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  text-align: center;
+}
+
+.col-35{
+  width: 35%;
+  background-color: royalblue;
+  padding: 40px;
+  border: 0px solid white;
+  border-radius: 0px;
+}
+
+.col-65{
+  width: 65%;
+  background-color: blue;
+  border: 0px solid white;
+  border-radius: 0px;
+}
+.col-65 img{
+  width: 100%;
+  border-radius: 0%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.block-example {
+  width: 6rem;
+  height: 6rem;
+  margin: 0.5rem;
+  background-color: #eee;
+  display: inline-block;
+}
+
+.wrap{
+  width:100%;
+  border-radius: 1px;
+  margin-top:50px;
+  padding:35px;
+
+}
+
+label{
+  font-size: 20px;
+  color: white;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #0099FF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content{
+  width: 100%;
+  background-color: #0099FF;
+}
+.trainDetails{
+  width: 30%;
+}
+.userForm{
+  width: 60%;
+}
+
+input[type=submit]:hover {
+  background-color: lightblue;
+}
