@@ -9,6 +9,7 @@ const config = require('./DB.js');
 const trainRoute = require('./Route/trainRoute');
 const userRoute = require('./Route/userRoute');
 const paymentRoute = require('./Route/paymentRoute');
+const ticketRoute = require('./Route/ticketRoute');
 
 mongoose.promise = global.Promise;
 
@@ -24,6 +25,7 @@ app.use(bodyParser.json());
 app.use('/trains', trainRoute);
 app.use('/users', userRoute);
 app.use('/payments', paymentRoute);
+app.use('/tickets', ticketRoute);
 
 app.listen(PORT, function () {
     console.log('Server is running')

@@ -17,10 +17,6 @@ let Ticket = new Schema({
     NoOfPassengers: {
         type: String,
         default:''
-    },
-    Price: {
-        type: String,
-        default:''
     }
 },{
     collection: 'ticket'
