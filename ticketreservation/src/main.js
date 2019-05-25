@@ -4,6 +4,7 @@ import Result from './result';
 import Search from './search';
 import UserDetails from './userDetails';
 import PaymentDetails from './paymentDetails';
+import TicketDetails from './ticket';
 
 const Main = () => (
     <Router>
@@ -12,6 +13,7 @@ const Main = () => (
             <Route path='/Result' component={Result} />
             <Route path='/UserDetails' component={UserDetails} />
             <Route path='/PaymentDetails' component={PaymentDetails} />
+            <Route path='/TicketDetails' component={TicketDetails} />
         </Switch>
     </Router>
 )

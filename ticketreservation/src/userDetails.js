@@ -18,6 +18,7 @@ export default class userDetails extends Component {
             Email:'',
             Mobile:'',
             result:[],
+            id:''
         };
     }
     componentDidMount(){
@@ -71,9 +72,9 @@ export default class userDetails extends Component {
         axios.post('http://localhost:4000/users/addUser', obj)
             .then(res => {
                 this.setState({
-                    message:res.data.message,
+                    id:res.data.id,
                 });
-                    window.location.href = "/PaymentDetails?trainId="+this.state.result._id+"&passengers="+this.state.NoOfPassengers;
+                    window.location.href = "/PaymentDetails?trainId="+this.state.result._id+"&passengers="+this.state.NoOfPassengers+"&user="+this.state.id;
             });
     }
     render() {
@@ -83,24 +84,26 @@ export default class userDetails extends Component {
                 <div className="trainDetails">
                     <h1>Train Details</h1>
                     <table width="100%">
-                        <thead>
                         <tr>
                             <th>Train Number</th>
-                            <th>Departure</th>
-                            <th>Destination</th>
-                            <th>Time</th>
-                            <th>Price for one passenger</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
                             <td>{this.state.result.TrainNo}</td>
+                        </tr>
+                        <tr>
+                            <th>Departure</th>
                             <td>{this.state.result.Start}</td>
+                        </tr>
+                        <tr>
+                            <th>Destination</th>
                             <td>{this.state.result.End}</td>
+                        </tr>
+                        <tr>
+                            <th>Time</th>
                             <td>{this.state.result.Time}</td>
+                        </tr>
+                        <tr>
+                            <th>Price for one passenger</th>
                             <td>{this.state.result.Price}</td>
                         </tr>
-                        </tbody>
                     </table>
                 </div>
                 <div className="userForm">

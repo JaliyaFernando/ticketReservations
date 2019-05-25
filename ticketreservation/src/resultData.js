@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import UserDetails from "./userDetails";
 import { Link } from 'react-router-dom';
 
 class ResultData extends Component {
